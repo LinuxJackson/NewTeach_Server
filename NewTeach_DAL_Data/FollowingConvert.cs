@@ -62,7 +62,11 @@ namespace NewTeach_DAL_Data
 
         static public byte[] ConvertToBytes(int uid, bool isSucceed)
         {
-            return JsonBytesConvert.ToBytes(ConvertToJson(uid, isSucceed));
+<<<<<<< HEAD
+            return JsonBytesConvert.ToBytes(ConvertToJson(uid, isSucceed), 2)
+=======
+            return JsonBytesConvert.ToBytes(ConvertToJson(uid, isSucceed),2);
+>>>>>>> f6ceabe8aaabd7644130bdf8985438cb6d751287
             //byte[] bResult = new byte[6];
 
             //BitConverter.GetBytes(uid).CopyTo(bResult, 0);

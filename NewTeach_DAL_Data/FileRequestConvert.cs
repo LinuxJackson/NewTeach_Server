@@ -82,6 +82,7 @@ namespace NewTeach_DAL_Data
             }
             sr.Close();
             return r;
+<<<<<<< HEAD
         }
 
         static public ReceiveFileRequest ConvertToClass_Receive(string jData)
@@ -110,6 +111,8 @@ namespace NewTeach_DAL_Data
             }
             sr.Close();
             return r;
+=======
+>>>>>>> f6ceabe8aaabd7644130bdf8985438cb6d751287
         }
 
         static public ReceiveFileRequest ConvertToClass_Receive(byte[] data)
@@ -151,7 +154,11 @@ namespace NewTeach_DAL_Data
 
         static public byte[] ConvertToBytes_Response(FileRequestResponse frr)
         {
-            return JsonBytesConvert.ToBytes(ConvertToJson_Response(frr));
+<<<<<<< HEAD
+            return JsonBytesConvert.ToBytes(ConvertToJson_Response(frr), 2)
+=======
+            return JsonBytesConvert.ToBytes(ConvertToJson_Response(frr),2);
+>>>>>>> f6ceabe8aaabd7644130bdf8985438cb6d751287
             //byte[] data = new byte[6];
 
             //BitConverter.GetBytes(frr.Uid).CopyTo(data, 0);

@@ -39,7 +39,7 @@ namespace NewTeach_DAL_Data
         
         static public byte[] ConvertToBytes(AccountInfo_mod data)
         {
-            return Encoding.Default.GetBytes(ConvertToJson(data));
+            return JsonBytesConvert.ToBytes(ConvertToJson(data),2);
             /*
             //4+2+4+24
             byte[] bResult = new byte[48];

@@ -34,7 +34,7 @@ namespace NewTeach_DAL_Data
 
         static public UserImage_mod ConvertToClass(byte[] data)
         {
-            return ConvertToClass(JsonBytesConvert.ToJson(data));
+            return ConvertToClass(JsonBytesConvert.ToJson(data),2);
             /*
             UserImage_mod userImage = new UserImage_mod();
 
@@ -72,7 +72,11 @@ namespace NewTeach_DAL_Data
 
         static public byte[] ConvertToBytes(UserImage_mod data)
         {
-            return JsonBytesConvert.ToBytes(ConvertToJson(data));
+<<<<<<< HEAD
+            return JsonBytesConvert.ToBytes(ConvertToJson(data), 2)
+=======
+            return JsonBytesConvert.ToBytes(ConvertToJson(data),2);
+>>>>>>> f6ceabe8aaabd7644130bdf8985438cb6d751287
             /*
             byte[] bResult = new byte[12];
 
